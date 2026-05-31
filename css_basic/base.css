@@ -1,0 +1,36 @@
+body, main {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.works_on_smartphone {
+    min-width: 320px;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    font-size: 300%;
+}
